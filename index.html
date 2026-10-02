@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da memória</title>
+</head>
+<!-- Link para o arquivo de estilização do CSS -->
+<link rel="stylesheet" href="css/styles.css">
+
+<body>   
+  <section class="header">
+    <h1>Jogo da memória</h1>
+    <button id="start">Iniciar</button>
+    <span id="timer">00:00</span>  
+  </section>
+
+  <!-- Início do container principal -->
+  <section class="memory-game">    
+  
+    <!-- Início das seções dos cards - 12 cards (cartões)-->
+    <section class="memory-card" data-framework="iron_man">
+      <!-- O que são Data Attributes?
+        São atributos criados por você no HTML para guardar informações extras em uma tag 
+        sem precisar criar classes ou IDs.Exemplo no HTML:<div data-status="ativo" 
+        data-cor="azul">Texto</div>-->
+      <img class="front-face" src="IMAGES/marvellogo.jpg" alt="Marvel" />
+      <img class="back-face" src="IMAGES/ironman2.jpg" alt="Homem de Ferro/TonyStark" />
+    </section>
+
+    <section class="memory-card" data-framework="black_widow">
+      <img class="front-face" src="IMAGES/marvellogo.jpg" alt="Marvel" />
+      <img class="back-face" src="IMAGES/blackwidow.jpg" alt="BlackWidow" />
+    </section>
+
+    <section class="memory-card" data-framework="Feiticeira_Escarlate">
+      <img class="front-face" src="IMAGES/marvellogo.jpg" alt="Marvel" />
+      <img class="back-face" src="IMAGES/feiticeiraescarlate.webp" alt="Wanda" />
+    </section>
+
+    <section class="memory-card" data-framework="iron_man">
+      <img class="front-face" src="IMAGES/marvellogo.jpg" alt="Marvel" />
+      <img class="back-face" src="IMAGES/ironman2.jpg" alt="Iron Man" />
+    </section>
+
+    <section class="memory-card" data-framework="blackwidow">
+      <img class="front-face" src="IMAGES/marvellogo.jpg" alt="Marvel" />
+      <img class="back-face" src="IMAGES/blackwidow.jpg" alt="Black BlackWidow" />
+    </section>
+
+    <section class="memory-card" data-framework="Feiticeira_Escarlate">
+      <img class="front-face" src="IMAGES/marvellogo.jpg" alt="Avengers" />
+      <img class="back-face" src="IMAGES/feiticeiraescarlate.webp" alt="Wanda" />
+    </section>
+
+    <section class="memory-card" data-framework="black_panther">
+      <img class="front-face" src="IMAGES/marvellogo.jpg" alt="Marvel" />
+      <img class="back-face" src="IMAGES/blackpanther.webp" alt="blackpanther" />
+    </section>
+
+    <section class="memory-card" data-framework="blackpanther">
+      <img class="front-face" src="IMAGES/marvellogo.jpg" alt="Marvel" />
+      <img class="back-face" src="IMAGES/blackpanther.webp" alt="blackpanther" />
+    </section>
+
+    <section class="memory-card" data-framework="Gamora">
+      <img class="front-face" src="IMAGES/marvellogo.jpg" alt="Marvel" />
+      <img class="back-face" src="IMAGES/gamora.jpg" alt="Who's gamora?" />
+    </section>
+
+    <section class="memory-card" data-framework="Gamora">
+      <img class="front-face" src="IMAGES/marvellogo.jpg" alt="Marvel" />
+      <img class="back-face" src="IMAGES/gamora.jpg" alt="Who's gamora?" />
+    </section>
+
+    <section class="memory-card" data-framework="spider_man">
+      <img class="front-face" src="IMAGES/marvellogo.jpg" alt="Marvel" />
+      <img class="back-face" src="IMAGES/spiderman.jpg" alt="Spiderman" />
+    </section>
+
+   <section class="memory-card" data-framework="spider_man">
+      <img class="front-face" src="IMAGES/marvellogo.jpg" alt="Marvel" />
+      <img class="back-face" src="IMAGES/spiderman.jpg" alt="Spiderman" />
+    </section>
+    <!-- Fim das seções dos cards-->
+
+  </section>
+  <!-- Fim do container principal -->
+
+  <!-- Link para o arquivo Javascript, que será iniciado na próxima semana -->
+  <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body {
+background-color: rgb(25, 37, 206);
+
+}
+
+.tabuleiro {
+    display: grid;
+   grid-template-columns: repeat(4, 120px);
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.carta {
+    width: 120px;
+    height: 180px;
+    position: relative;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.4s;
+
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.carta img {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border: 4px solid black;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
+.frente {
+    transform: rotateY(180deg);
+}
+
+.verso {
+    transform: rotateY(0deg);
+}
+
+.carta.virada {
+    transform: rotateY(180deg);
+}
